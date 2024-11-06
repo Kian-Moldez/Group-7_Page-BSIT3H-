@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<?php include('C:\Users\JUAN KIAN C. MOLDEZ\OneDrive\Desktop\Group#7 Page\header.php'); ?>
+<?php include('C:\Users\kianm\OneDrive\Desktop\Group#7 Page\header.php'); ?>
    
 
     <div class="card">
@@ -96,11 +96,7 @@
         </div>
     </div>
   
-    <footer> 
-        <nav class="nav-text">
-            <p>All Rights Reserved 2024</p>
-        </nav>
-    </footer>
+<?php include('C:\Users\kianm\OneDrive\Desktop\Group#7 Page\footer.php'); ?>
 
 </body>
 </html>

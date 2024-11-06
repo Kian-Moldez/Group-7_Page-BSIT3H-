@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<?php include('C:\Users\JUAN KIAN C. MOLDEZ\OneDrive\Desktop\Group#7 Page\header.php'); ?>
+<?php include('C:\Users\kianm\OneDrive\Desktop\Group#7 Page\header.php'); ?>
     
     <div class="gallery">
           <img src="cappucino.jpg"  width="600" height="400">
@@ -70,19 +70,19 @@
     <div class="gallery">
         <img src="americano.jpg"  width="600" height="400">
         <p class="coffee-name">Americano</p>
-      <div class="desc">Add a description of the image here</div>
+      <div class="desc">A coffee drink prepared by diluting an espresso shot with hot water.</div>
     </div>
 
     <div class="gallery">
         <img src="macchiato.jpg"  width="600" height="400">
         <p class="coffee-name">Macchiato</p>
-      <div class="desc">Add a description of the image here</div>
+      <div class="desc">An espresso coffee drink with a small amount of milk, usually foamed.</div>
     </div>
 
     <div class="gallery">
         <img src="irish.jpg"  width="600" height="400">
         <p class="coffee-name">Irish</p>
-      <div class="desc">Add a description of the image here</div>
+      <div class="desc">A caffeinated alcoholic drink consisting of Irish whiskey, hot coffee and sugar, which has been stirred and topped with cream.</div>
     </div>
 
 

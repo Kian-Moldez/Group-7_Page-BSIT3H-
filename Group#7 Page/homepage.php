@@ -7,13 +7,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="group.css"> 
     <title>Home Page</title>
-   
 
 </head>
-<body>
+<body class="a">
 
 
-<?php include('C:\Users\JUAN KIAN C. MOLDEZ\OneDrive\Desktop\Group#7 Page\header.php'); ?>
+<?php include('C:\Users\kianm\OneDrive\Desktop\Group#7 Page\header.php'); ?>
     
     <section>
         <h1>Coffee Hub</h1>

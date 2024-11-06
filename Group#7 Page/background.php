@@ -7,25 +7,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="group.css"> 
     <title>Background</title>
-   
+
 
 </head>
 <body>
 
-<?php include('C:\Users\JUAN KIAN C. MOLDEZ\OneDrive\Desktop\Group#7 Page\header.php'); ?>
+
+    <?php include('C:\Users\kianm\OneDrive\Desktop\Group#7 Page\header.php'); ?>
     
     <div>
-        <img src="bg-coffee.jpg" class="bg-pic" width="1500px"; height="300px";>
+        <img src="Boarder2.jpg" class="bg-pic">
     </div>
     
-    <div class="container-bg">
+    <div class="container-bg"> 
 <?php
     $q = "What is Coffee";
     $a = "Coffee is a brewed beverage made from the roasted seeds of the Coffea plant, commonly known as coffee beans. ";
     $b = "These beans are harvested from coffee cherries, which grow on trees primarily in tropical regions. Coffee is known for its distinctive aroma, rich flavor, and stimulating effect due to its caffeine content.";
     $c = $a . $b;
 
-    echo nl2br("<h2>$q\n</h2>");
+    echo nl2br("<h2>$q\n</h2><br>");
     echo $c;
 
 ?>
@@ -56,6 +57,9 @@
         
 ?>
      </div>
-
+     
+     <div>
+        <img src="Boarder2.jpg" class="bg-pic">
+    </div>
 </body>
 </html>
