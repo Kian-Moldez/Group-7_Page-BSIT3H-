@@ -57,7 +57,7 @@
         <p>May 23, 2002</p>
         <p>22 years old</p>
         <p>About Hadji:</p>
-        <p>A simple young lady who wishes to see the world for its beauty and wonders. She enjoys watching movies from other countries to glimpse their culture.</p>
+        <p>A simple young lady who wishes to see the world for its beauty and wonders. She enjoys watching movies from other countries to catch glimpse their culture.</p>
         <div class="socials">
             <a href="https://github.com/nurfaisahadjisalic"><button class="github"><i class="fab fa-github"></i></button></a>
             <a href="https://www.facebook.com/profile.php?id=61562044058223"><button class="facebook"><i class="fab fa-facebook"></i></button></a>

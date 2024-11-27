@@ -1,6 +1,7 @@
 <?php
 
 session_start();
+
 ?>
 
 <!DOCTYPE html>
@@ -11,7 +12,7 @@ session_start();
 <title>Home</title>
 <link rel="stylesheet" href="survey.css"> 
 <link rel="stylesheet" href="group.css"> 
-</head>
+</head> 
 
 <body>
 

@@ -22,7 +22,7 @@
     <div class="container-bg"> 
 <?php
     $q = "What is Coffee";
-    $a = "Coffee is a brewed beverage made from the roasted seeds of the Coffea plant, commonly known as coffee beans. ";
+    $a = "Coffee is a brewed beverage made from the roasted seeds of the Coffee plant, commonly known as coffee beans. ";
     $b = "These beans are harvested from coffee cherries, which grow on trees primarily in tropical regions. Coffee is known for its distinctive aroma, rich flavor, and stimulating effect due to its caffeine content.";
     $c = $a . $b;
 
@@ -56,6 +56,9 @@
     echo $c;
         
 ?>
+</div>
+
+
      </div>
      
      <div>

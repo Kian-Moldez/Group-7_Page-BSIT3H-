@@ -1,44 +1,36 @@
 <?php
-session_start();
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
-$host = "localhost";
-$db_username = "root";
-$db_password = "";
-$db_name = "coffee";
+                                                                                                                                                       
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "dbcoffee";
 
-$conn = new mysqli($host, $db_username, $db_password, $db_name);
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+
 
 if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
+    die("Connection failed: " . $conn->connect_error);
+    }
+    echo "<br>Database Connected successfully";
+    
 
 
-$name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
-$username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
-$password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
-$phone = filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_NUMBER_INT);
-$remember_me = isset($_POST['remember_me']);
 
+    function insert(){
+        global $conn;
+    
+        $name = $_POST["name"];
+        $username = $_POST["username"];
+        $password = $_POST["password"];
+        $phone = $_POST["phone"];
+    
+        $query = "INSERT INTO users VALUES('', '$name', '$username', '$password', '$phone')";
+        mysqli_query($conn, $query);
+        echo "Inserted Successfully";
+    }
 
-$hashed_password = password_hash($password, PASSWORD_BCRYPT);
-
-
-$sql = "INSERT INTO users (name, username, password, phone) VALUES (?, ?, ?, ?)";
-$stmt = $conn->prepare($sql);
-$stmt->bind_param("ssss", $name, $username, $hashed_password, $phone);
-
-if ($stmt->execute()) {
-  echo "Registration successful!<br>";
-  $_SESSION['username'] = $username;
-
-  
-  if ($remember_me) {
-    setcookie("username", $username, time() + (86400 * 30), "/"); // 30 days
-  }
-} else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
-}
-
-$stmt->close();
 $conn->close();
 ?>
